@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black; }
+
+header {
+  background-color: white;
+  color: black; }
+  header .logo {
+    color: #24ccff;
+    font-size: 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+  header .search {
+    font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px; }
+  header .meun {
+    padding-top: 10px; }
+    header .meun ul li {
+      display: inline-flex;
+      list-style: none; }
+      header .meun ul li a {
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 10px;
+        transition: 0.5s; }
+
+.main-content {
+  padding-top: 10px;
+  background-color: white; }
+  .main-content img {
+    width: 5%;
+    margin: 2px; }
+  .main-content .content-left {
+    background-color: #eae4e4;
+    border-radius: 2px;
+    padding-top: 40px;
+    height: 100%; }
+    .main-content .content-left img {
+      height: 100%;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      padding: 5px;
+      width: 100%; }
+  .main-content .dashboard-list {
+    margin-top: 30px; }
+    .main-content .dashboard-list ul {
+      margin-left: 5px; }
+      .main-content .dashboard-list ul li {
+        list-style: none;
+        padding: 10px;
+        padding-left: 13px; }
+        .main-content .dashboard-list ul li i {
+          margin-left: 35px;
+          padding-left: 15px; }
+    .main-content .dashboard-list .dashboard-pix {
+      position: relative;
+      margin-left: 0; }
+      .main-content .dashboard-list .dashboard-pix h5 {
+        text-align: center; }
+        .main-content .dashboard-list .dashboard-pix h5 img {
+          padding: 3px;
+          width: 30%;
+          border-radius: 40px; }
+    .main-content .dashboard-list .btn-project {
+      background-color: #24ccff;
+      color: white;
+      padding: 7px;
+      width: 100%;
+      text-align: center;
+      border: 0;
+      border-radius: 2px; }
+
+.content-table {
+  background-color: white;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 60vh;
+  border-radius: 12px; }
+  .content-table h5 {
+    margin-left: 49px; }
+  .content-table table {
+    padding-top: 30px;
+    width: 100%;
+    border: 0;
+    margin-left: 40px; }
+    .content-table table tr td {
+      padding: 5px; }
+      .content-table table tr td .btn-1 {
+        padding: 5px;
+        border-radius: 4px;
+        text-align: center;
+        transition: 0.5s;
+        background-color: darkgreen; }
+        .content-table table tr td .btn-1:hover {
+          background-color: cornflowerblue; }
+      .content-table table tr td .btn-2 {
+        padding: 5px;
+        border-radius: 4px;
+        text-align: center;
+        transition: 0.5s;
+        background-color: purple; }
+        .content-table table tr td .btn-2:hover {
+          background-color: cornflowerblue; }
+      .content-table table tr td .btn-3 {
+        padding: 5px;
+        border-radius: 4px;
+        text-align: center;
+        transition: 0.5s;
+        background-color: brown; }
+        .content-table table tr td .btn-3:hover {
+          background-color: cornflowerblue; }
+      .content-table table tr td .btn-4 {
+        padding: 5px;
+        border-radius: 4px;
+        text-align: center;
+        transition: 0.5s;
+        background-color: orchid; }
+        .content-table table tr td .btn-4:hover {
+          background-color: cornflowerblue; }
+      .content-table table tr td .btn-5 {
+        padding: 5px;
+        border-radius: 4px;
+        text-align: center;
+        transition: 0.5s;
+        background-color: palevioletred; }
+        .content-table table tr td .btn-5:hover {
+          background-color: cornflowerblue; }

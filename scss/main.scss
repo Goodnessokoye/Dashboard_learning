@@ -1,0 +1,162 @@
+$primary-color: #24ccff;
+$meun-color: white;
+
+@mixin table-btn {
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.5s;
+  &:hover {
+    background-color: cornflowerblue;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+header {
+  background-color: $meun-color;
+  color: black;
+  .logo {
+    color: $primary-color;
+    font-size: 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .search {
+    font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    // text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .meun {
+    padding-top: 10px;
+    ul {
+      li {
+        display: inline-flex;
+        list-style: none;
+
+        a {
+          text-transform: uppercase;
+          font-size: 14px;
+          padding: 10px;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+body {
+  // height: 90vh;
+}
+
+.main-content {
+  padding-top: 10px;
+  // height: 90.4vh;
+  background-color: $meun-color;
+  img {
+    width: 5%;
+    margin: 2px;
+    // h5 {
+    //   display: inline-flexbox;
+    //   background-color: blue($color: #000000);
+    // }
+  }
+  .content-left {
+    background-color: rgb(234, 228, 228);
+    border-radius: 2px;
+    padding-top: 40px;
+    height: 100%;
+    img {
+      height: 100%;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      padding: 5px;
+      width: 100%;
+    }
+  }
+  .dashboard-list {
+    margin-top: 30px;
+    ul {
+      margin-left: 5px;
+      li {
+        list-style: none;
+        padding: 10px;
+        padding-left: 13px;
+        i {
+          margin-left: 35px;
+          padding-left: 15px;
+        }
+      }
+    }
+    .dashboard-pix {
+      position: relative;
+      margin-left: 0;
+      h5 {
+        // background-color: brown;
+        text-align: center;
+        img {
+          padding: 3px;
+          width: 30%;
+          border-radius: 40px;
+        }
+      }
+    }
+    .btn-project {
+      background-color: $primary-color;
+      color: $meun-color;
+      padding: 7px;
+      width: 100%;
+      text-align: center;
+      border: 0;
+      border-radius: 2px;
+    }
+  }
+}
+
+.content-table {
+  background-color: $meun-color;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 60vh;
+  border-radius: 12px;
+  h5 {
+    margin-left: 49px;
+  }
+  table {
+    padding-top: 30px;
+    width: 100%;
+    border: 0;
+    margin-left: 40px;
+    tr {
+      td {
+        padding: 5px;
+        // text-align: center;
+        .btn-1 {
+          @include table-btn;
+          background-color: darkgreen;
+        }
+        .btn-2 {
+          @include table-btn;
+          background-color: purple;
+        }
+        .btn-3 {
+          @include table-btn;
+          background-color: brown;
+        }
+        .btn-4 {
+          @include table-btn;
+          background-color: orchid;
+        }
+        .btn-5 {
+          @include table-btn;
+          background-color: palevioletred;
+        }
+      }
+    }
+  }
+}
