@@ -10,6 +10,14 @@ $meun-color: white;
     background-color: cornflowerblue;
   }
 }
+@mixin hover-active {
+  &:hover {
+    color: $primary-color;
+    &:active {
+      color: palevioletred;
+    }
+  }
+}
 
 * {
   margin: 0;
@@ -21,6 +29,7 @@ header {
   color: black;
   .logo {
     color: $primary-color;
+    text-decoration: none;
     font-size: 40px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -28,15 +37,23 @@ header {
   .search {
     font-size: 14px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
     // text-transform: uppercase;
     padding-top: 20px;
   }
   .meun {
     padding-top: 10px;
     ul {
+      display: flex;
       li {
         display: inline-flex;
         list-style: none;
+        img {
+          width: 8%;
+          padding: 8px;
+          margin: -9px;
+          border-radius: 13px;
+        }
 
         a {
           text-transform: uppercase;
@@ -60,16 +77,30 @@ body {
   img {
     width: 5%;
     margin: 2px;
-    // h5 {
-    //   display: inline-flexbox;
-    //   background-color: blue($color: #000000);
-    // }
+    h5 {
+      display: inline-flexbox;
+      background-color: blue($color: #000000);
+    }
   }
   .content-left {
     background-color: rgb(234, 228, 228);
     border-radius: 2px;
     padding-top: 40px;
     height: 100%;
+    .image-text-dashboard {
+      img {
+        padding: 8px;
+        width: 5%;
+        border-radius: 40px;
+        margin: 6px;
+      }
+    }
+    .text-dashboard {
+      h5 {
+        display: flex;
+        justify-content: start;
+      }
+    }
     img {
       height: 100%;
       padding-top: 15px;
@@ -82,16 +113,25 @@ body {
     margin-top: 30px;
     ul {
       margin-left: 5px;
+      a {
+        text-decoration: none;
+      }
       li {
         list-style: none;
         padding: 10px;
+        font-size: small;
         padding-left: 13px;
+        display: flex;
+        justify-content: space-between;
+        @include hover-active;
+
         i {
-          margin-left: 35px;
           padding-left: 15px;
+          @include hover-active;
         }
       }
     }
+
     .dashboard-pix {
       position: relative;
       margin-left: 0;
