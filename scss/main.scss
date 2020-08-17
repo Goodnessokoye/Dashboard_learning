@@ -18,15 +18,30 @@ $meun-color: white;
     }
   }
 }
+@mixin profile-img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  object-position: center;
+}
 
 * {
   margin: 0;
   padding: 0;
   color: black;
+  // width: fit-content;
 }
 header {
   background-color: $meun-color;
   color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+  // position: -webkit-sticky;
+
   .logo {
     color: $primary-color;
     text-decoration: none;
@@ -48,11 +63,8 @@ header {
       li {
         display: inline-flex;
         list-style: none;
-        img {
-          width: 8%;
-          padding: 8px;
-          margin: -9px;
-          border-radius: 13px;
+        .img-container {
+          @include profile-img;
         }
 
         a {
@@ -88,11 +100,12 @@ body {
     padding-top: 40px;
     height: 100%;
     .image-text-dashboard {
-      img {
-        padding: 8px;
-        width: 5%;
-        border-radius: 40px;
-        margin: 6px;
+      .img-container {
+        // padding: 8px;
+        // width: 5%;
+        // border-radius: 40px;
+        // margin: 6px;
+        @include profile-img;
       }
     }
     .text-dashboard {
@@ -111,8 +124,14 @@ body {
   }
   .dashboard-list {
     margin-top: 30px;
+    position: sticky;
+    top: 90px;
+    left: 0;
+    z-index: 100;
+
     ul {
-      margin-left: 5px;
+      // margin-left: 5px;
+      margin: 0;
       a {
         text-decoration: none;
       }
@@ -123,10 +142,11 @@ body {
         padding-left: 13px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         @include hover-active;
 
         i {
-          padding-left: 15px;
+          // padding-left: 15px;
           @include hover-active;
         }
       }
@@ -138,10 +158,8 @@ body {
       h5 {
         // background-color: brown;
         text-align: center;
-        img {
-          padding: 3px;
-          width: 30%;
-          border-radius: 40px;
+        .img-container {
+          @include profile-img;
         }
       }
     }
@@ -159,10 +177,11 @@ body {
 
 .content-table {
   background-color: $meun-color;
-  padding-top: 20px;
+  padding: 20px 20px;
   margin-top: 30px;
-  margin-left: 10px;
-  height: 60vh;
+  // margin-left: 10px;
+  // height: 60vh;
+  // width: 100%;
   border-radius: 12px;
   h5 {
     margin-left: 49px;
@@ -171,11 +190,11 @@ body {
     padding-top: 30px;
     width: 100%;
     border: 0;
-    margin-left: 40px;
+    // margin-left: 40px;
     tr {
       td {
         padding: 5px;
-        // text-align: center;
+        text-align: center;
         .btn-1 {
           @include table-btn;
           background-color: darkgreen;

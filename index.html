@@ -16,7 +16,7 @@
   <body>
     <header>
       <div class="container">
-        <div class="row">
+        <div class="row w-100">
           <div class="col-md-2">
             <a href="index.html" class="logo"> SASS</a>
           </div>
@@ -31,11 +31,14 @@
               />
             </h6>
           </div>
-          <div class="col-md-7 text-right">
-            <div class="meun text-right">
+          <div class="col-md-7 d-flex justify-content-end">
+            <div class="meun">
               <ul>
                 <li>
-                  <a href=""> <img src="img/img2.jpg" alt="" /> Goodness </a>
+                  <a href="">
+                    <img src="img/img2.jpg" alt="" class="img-container" />
+                    Goodness
+                  </a>
                 </li>
 
                 <li>
@@ -59,32 +62,69 @@
           <div class="col-md-2">
             <div class="dashboard-list">
               <div class="dashboard-pix col-md-12 text-left">
-                <h5><img src="img/img2.jpg" alt="" />Goodness</h5>
+                <h5>
+                  <img
+                    src="img/img2.jpg"
+                    alt=""
+                    class="img-container"
+                  />Goodness
+                </h5>
               </div>
               <ul>
+                <li>
+                  <p class="mb-0">
+                    Dashboard
+                  </p>
+                  <i class="fas fa-home"></i>
+                </li>
                 <a href=""
-                  ><li>Dashboard <i class="fas fa-home"></i></li
+                  ><li>
+                    <p>
+                      UI Element
+                    </p>
+                    <i class="fas fa-brush"></i></li
                 ></a>
                 <a href=""
-                  ><li>UI Element <i class="fas fa-brush"></i></li
+                  ><li>
+                    <p>
+                      Comments
+                    </p>
+                    <i class="far fa-comment-alt"></i></li
                 ></a>
                 <a href=""
-                  ><li>Comments <i class="far fa-comment-alt"></i></li
+                  ><li>
+                    <p>
+                      Forms Stuff
+                    </p>
+                    <i class="far fa-file-alt"></i></li
                 ></a>
                 <a href=""
-                  ><li>Forms Stuff <i class="far fa-file-alt"></i></li
+                  ><li>
+                    <p>
+                      Data Table
+                    </p>
+                    <i class="fas fa-newspaper"></i></li
                 ></a>
                 <a href=""
-                  ><li>Data Table <i class="fas fa-newspaper"></i></li
+                  ><li>
+                    <p>
+                      Icons
+                    </p>
+                    <i class="fas fa-icons"></i></li
                 ></a>
                 <a href=""
-                  ><li>Icons <i class="fas fa-icons"></i></li
-                ></a>
-                <a href=""
-                  ><li>Sample Pages <i class="far fa-file"></i></li
+                  ><li>
+                    <p>
+                      Sample Pages
+                    </p>
+                    <i class="far fa-file"></i></li
                 ></a>
                 <a href="">
-                  <li>Extra <i class="fas fa-thumbtack"></i></li
+                  <li>
+                    <p>
+                      Extra
+                    </p>
+                    <i class="fas fa-thumbtack"></i></li
                 ></a>
               </ul>
               <button class="btn-project">Add Project</button>
@@ -94,7 +134,13 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="image-text-dashboard col-md-12">
-                  <h4><img src="img/img2.jpg" alt="" />Dashboard</h4>
+                  <h4>
+                    <img
+                      src="img/img2.jpg"
+                      alt=""
+                      class="img-container"
+                    />Dashboard
+                  </h4>
                 </div>
                 <div class="col-md-4">
                   <img src="img/img.jpg" alt="" />
