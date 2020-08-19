@@ -30,8 +30,8 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .main-content .dashboard-list {
-    /* width: 50%; */
+    width: 15%;
   }
 }
