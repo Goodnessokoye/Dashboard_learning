@@ -37,7 +37,9 @@ header {
           text-transform: uppercase;
           font-size: 14px;
           padding: 10px;
-          transition: 0.5s; }
+          transition: 0.5s;
+          display: flex;
+          align-items: center; }
 
 .main-content {
   padding-top: 10px;
@@ -70,20 +72,17 @@ header {
       width: 100%; }
   .main-content .dashboard-list {
     margin-top: 30px;
-    position: sticky;
-    top: 90px;
-    left: 0;
-    z-index: 100; }
+    position: fixed; }
     .main-content .dashboard-list ul {
       margin: 0; }
       .main-content .dashboard-list ul a {
         text-decoration: none; }
       .main-content .dashboard-list ul li {
         list-style: none;
-        padding: 10px;
+        padding: 7px;
         font-size: small;
-        padding-left: 13px;
         display: flex;
+        margin: 0;
         justify-content: space-between;
         align-items: center; }
         .main-content .dashboard-list ul li:hover {
@@ -94,11 +93,13 @@ header {
           color: #24ccff; }
           .main-content .dashboard-list ul li i:hover:active {
             color: palevioletred; }
+        .main-content .dashboard-list ul li p {
+          margin-bottom: 0; }
     .main-content .dashboard-list .dashboard-pix {
       position: relative;
       margin-left: 0; }
       .main-content .dashboard-list .dashboard-pix h5 {
-        text-align: center; }
+        text-align: initial; }
         .main-content .dashboard-list .dashboard-pix h5 .img-container {
           border-radius: 50%;
           height: 40px;
@@ -108,8 +109,7 @@ header {
     .main-content .dashboard-list .btn-project {
       background-color: #24ccff;
       color: white;
-      padding: 7px;
-      width: 100%;
+      padding: 7px 7px;
       text-align: center;
       border: 0;
       border-radius: 2px; }

@@ -12,16 +12,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen" href="css/mobile.css" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="row w-100">
-          <div class="col-md-2">
+          <div class="d-flex">
             <a href="index.html" class="logo"> SASS</a>
-          </div>
-          <div class="col-md-3">
-            <h6 class="search">
+            <h6 class="search ml-5">
               <i class="fas fa-search"></i>
               <input
                 type="search"
@@ -31,7 +30,21 @@
               />
             </h6>
           </div>
-          <div class="col-md-7 d-flex justify-content-end">
+          <!-- <div class=" header-content1 col-md-2">
+            <a href="index.html" class="logo"> SASS</a>
+          </div>
+          <div class=" header-content2 col-md-3">
+            <h6 class="search">
+              <i class="fas fa-search"></i>
+              <input
+                type="search"
+                placeholder="search Projects"
+                name="search"
+                id=""
+              />
+            </h6>
+          </div> -->
+          <div class="header-content3 col-md-7 d-flex justify-content-start">
             <div class="meun">
               <ul>
                 <li>
@@ -41,7 +54,7 @@
                   </a>
                 </li>
 
-                <li>
+                <li class="d-flex justify-content-start">
                   <a href=""><i class="fas fa-gift"></i></a>
                 </li>
                 <li>
@@ -59,7 +72,7 @@
     <div class="main-content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-3 col-lg-2">
             <div class="dashboard-list">
               <div class="dashboard-pix col-md-12 text-left">
                 <h5>
@@ -127,10 +140,12 @@
                     <i class="fas fa-thumbtack"></i></li
                 ></a>
               </ul>
-              <button class="btn-project">Add Project</button>
+              <div class="text-center">
+                <button class="btn-project">Add Project</button>
+              </div>
             </div>
           </div>
-          <div class="content-left col-md-10">
+          <div class="content-left col-md-9 col-lg-10">
             <div class="container-fluid">
               <div class="row">
                 <div class="image-text-dashboard col-md-12">
@@ -142,59 +157,61 @@
                     />Dashboard
                   </h4>
                 </div>
-                <div class="col-md-4">
-                  <img src="img/img.jpg" alt="" />
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img src="img/img.jpg" alt="" class="main-content-pix1" />
                 </div>
-                <div class="col-md-4">
-                  <img src="img/img.jpg" alt="" />
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img src="img/img.jpg" alt="" class="main-content-pix2" />
                 </div>
-                <div class="col-md-4">
-                  <img src="img/img.jpg" alt="" />
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img src="img/img.jpg" alt="" class="main-content-pix3" />
                 </div>
               </div>
-              <div class="content-table">
+              <div
+                class="content-table table table-striped table-responsive-md btn-table {-sm|-md|-lg|-xl}"
+              >
                 <h5>Standard Table Design</h5>
                 <table>
-                  <tr>
+                  <tr class="tr1">
                     <td>name</td>
                     <td>email</td>
-                    <td>User type</td>
-                    <td>Joined</td>
+                    <td class="td3">User type</td>
+                    <td class="td4">Joined</td>
                     <td>Status</td>
                   </tr>
-                  <tr>
+                  <tr class="tr2">
                     <td>Chioma</td>
                     <td>G.okgkhsgsj@gmail.com</td>
-                    <td>Adim</td>
-                    <td>Yes</td>
+                    <td class="td3">Adim</td>
+                    <td class="td4">Yes</td>
                     <td><button class="btn-1">Member</button></td>
                   </tr>
-                  <tr>
+                  <tr class="tr3">
                     <td>Chioma</td>
                     <td>G.okgkhsgsj@gmail.com</td>
-                    <td>Adim</td>
-                    <td>Yes</td>
+                    <td class="td3">Adim</td>
+                    <td class="td4">Yes</td>
                     <td><button class="btn-2">Member</button></td>
                   </tr>
-                  <tr>
+                  <tr class="tr4">
                     <td>Chioma</td>
                     <td>G.okgkhsgsj@gmail.com</td>
-                    <td>Adim</td>
-                    <td>Yes</td>
+                    <td class="td3">Adim</td>
+                    <td class="td4">Yes</td>
                     <td><button class="btn-3">Member</button></td>
                   </tr>
-                  <tr>
+                  <tr class="tr5">
                     <td>Chioma</td>
                     <td>G.okgkhsgsj@gmail.com</td>
-                    <td>Adim</td>
-                    <td>Yes</td>
+                    <td class="td3">Adim</td>
+                    <td class="td4">Yes</td>
                     <td><button class="btn-4">Member</button></td>
                   </tr>
-                  <tr>
+                  <tr class="tr6">
                     <td>Chioma</td>
                     <td>G.okgkhsgsj@gmail.com</td>
-                    <td>Adim</td>
-                    <td>Yes</td>
+                    <td class="td3">Adim</td>
+                    <td class="td4">Yes</td>
                     <td><button class="btn-5">Member</button></td>
                   </tr>
                 </table>
